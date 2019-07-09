@@ -15,7 +15,7 @@ pipeline {
 				         pwd
 					 cd /home/ec2-user/java-rest-api/java-rest-api
 				         pwd
-					 mvn -version
+					 mvn clean install -e
 				'''
                         }
                 }
