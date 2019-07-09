@@ -4,8 +4,8 @@ pipeline {
                 stage('Build') {
                         steps {
                                 script {
-                                        echo "Iniciando build..."
-					pwd
+                                         sh echo "Iniciando build..."
+					 sh pwd
                                 }
                         }
                 }
