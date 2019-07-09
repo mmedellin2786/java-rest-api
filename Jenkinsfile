@@ -4,11 +4,15 @@ pipeline {
                 stage('Build') {
                         steps {
                                 
-                                         sh 'echo "Iniciando build..."'
-				         sh 'pwd'
-					 sh 'cd /home/ec2-user/java-rest-api/java-rest-api/'
-				         sh 'pwd'
-					 //sh 'mvn clean install -e'
+                                sh '''         
+				         echo "Iniciando build...
+				         pwd
+					 cd /home/
+					 pwd
+					 cd /home/ec2-user/java-rest-api/java-rest-api
+				         pwd
+					 //mvn clean install -e
+				'''
                         }
                 }
 
