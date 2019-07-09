@@ -5,7 +5,7 @@ pipeline {
                         steps {
                                 script {
                                          echo "Iniciando build..."
-					 sh 'pwd'
+					 sh 'sudo pwd'
                                 }
                         }
                 }
