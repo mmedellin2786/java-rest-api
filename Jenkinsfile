@@ -5,7 +5,7 @@ pipeline {
                         steps {
                                 
                                 sh '''         
-				         echo "Iniciando build...
+				         echo "Iniciando build..."
 				         pwd
 					 cd /home/
 					 pwd
