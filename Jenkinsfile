@@ -7,8 +7,6 @@ pipeline {
                                 sh '''         
 				         echo "Iniciando build..."
 				         pwd
-					 /*cd /home/
-					 pwd*/
 					 cd /home/ec2-user/java-rest-api/java-rest-api
 				         pwd
 					 
