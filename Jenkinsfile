@@ -12,11 +12,9 @@ pipeline {
                                          . ~/.profile 
 				   
 					 echo "Iniciando build..."
-				         pwd
-					 whoami
-					 sudo cd /home/ec2-user/java-rest-api/java-rest-api
-					 mvn clean install -e
-				         
+				         git init 
+					 pwd 
+					 git clone https://github.com/mmedellin2786/java-rest-api.git			
 				'''
 			}
                         }
