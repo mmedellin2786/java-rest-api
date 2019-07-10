@@ -24,9 +24,10 @@ pipeline {
  
 
                 stage('Static test') {
-                                sh '''
-                                        echo "Iniciando static test con Sonarq test1"	  
-			         '''
+                        steps { 
+                                sh '''   
+					 echo "Iniciando sonar..." 
+				'''
                         }
                 }
   }
