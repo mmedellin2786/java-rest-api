@@ -5,7 +5,7 @@ pipeline {
                         steps { 
                                 sh '''   
 				         whoami
-					 . ~/.profile
+					 //. ~/.profile
 					 pwd
 					 echo "Iniciando build..."
 				         git init 
