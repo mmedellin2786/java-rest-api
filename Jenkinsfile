@@ -20,6 +20,7 @@ pipeline {
 		 stage('Static test') {
                         steps { 
                                 sh '''   
+				         . ~/.profile
 					 echo "Iniciando Static test con sonarqube..."
 					 pwd 
 					 cd java-rest-api
