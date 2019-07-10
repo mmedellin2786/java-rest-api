@@ -15,7 +15,20 @@
                       <groupId>org.springframework.boot</groupId>
                       <artifactId>spring-boot-starter-web</artifactId>
                 </dependency>
-        </dependencies>
+				<dependency>
+						<groupId>org.junit.jupiter</groupId>
+						<artifactId>junit-jupiter-api</artifactId>
+						<version>5.4.2</version>
+						<scope>test</scope>
+				</dependency>
+				<dependency>
+						<groupId>org.junit.jupiter</groupId>
+						<artifactId>junit-jupiter-engine</artifactId>
+						<version>5.4.2</version>
+						<scope>test</scope>
+				</dependency>
+		</dependencies>
+		
         <build>
                 <plugins>
                         <plugin>
@@ -28,4 +41,4 @@
                 <maven.compiler.source>1.8</maven.compiler.source>
                 <maven.compiler.target>1.8</maven.compiler.target>
         </properties>
-</project>
+</project
