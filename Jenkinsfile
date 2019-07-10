@@ -18,16 +18,7 @@ pipeline {
 				         pwd
 					 
 				'''
-                        }
-                }
-
- 
-
-                stage('Static test') {
-                        steps { 
-                                sh '''   
-					 echo "Iniciando sonar..." 
-				'''
+			}
                         }
                 }
   }
