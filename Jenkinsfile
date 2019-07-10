@@ -13,7 +13,7 @@ pipeline {
 				   
 					 echo "Iniciando build..."
 				         pwd
-					 woami
+					 whoami
 					 cd /home/ec2-user/java-rest-api/java-rest-api
 				         pwd
 					 
