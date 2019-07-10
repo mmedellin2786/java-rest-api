@@ -4,18 +4,8 @@ pipeline {
                 stage('Build') {
                         steps { 
                                 sh '''   
-				         env.JAVA_HOME == '/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.201.b09-0.amzn2.x86_64/'
-					 env.M2_HOME=/usr/local/apache-maven/apache-maven-3.5.2'
-                                         env.M2=$M2_HOME/bin'
-                                         env.PATH=$M2:$PATH'
-                                         env.PATH=$JAVA_HOME:$PATH' 
-					 mvn --version
-					 echo 'export M2_HOME=/usr/local/apache-maven/apache-maven-3.5.2' >> ~/.profile
-                                         echo 'export M2=$M2_HOME/bin' >> ~/.profile
-                                         echo 'export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.201.b09-0.amzn2.x86_64/' >> ~/.profile
-                                         echo 'export PATH=$M2:$PATH' >> ~/.profile
-                                         echo 'export PATH=$JAVA_HOME:$PATH' >> ~/.profile 
-                                         . ~/.profile 
+				   
+					 source /etc/environment
 				   
 					 echo "Iniciando build..."
 				         git init 
