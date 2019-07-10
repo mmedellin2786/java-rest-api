@@ -1,1 +1,33 @@
-test
+version: '2'
+services:
+  sonar-mysql:
+    container_name: sonar-mysql
+    restart: always
+    image: mysql:5.6.25
+    networks:
+      - sonarnet
+    expose:
+      - "3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: sonar
+      MYSQL_USER: sonar
+      MYSQL_PASSWORD: sonar
+      MYSQL_DATABASE: sonar
+
+  sonar:
+    container_name: sonar
+    restart: always
+    image: accenture/adop-sonar:0.4.1
+    #build: ../images/docker-sonar/
+    networks:
+      - sonarnet
+    expose:
+      - "9000"
+    environment:
+      - "dependency:container==sonar-mysql"
+      - "SONARQUBE_JDBC_USERNAME=sonar"
+      - "SONARQUBE_JDBC_PASSWORD=sonar"
+
+networks:
+  sonarnet:
+    driver: bridge
