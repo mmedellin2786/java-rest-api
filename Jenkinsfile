@@ -26,6 +26,8 @@ pipeline {
                                 sh '''   
 					 echo "Iniciando Static test con sonarqube..."
 					 pwd 
+					 cd java-rest-api
+					 pwd
 					 mvn sonar:sonar \
                                           -Dsonar.host.url=http://18.191.210.53/sonar \
                                           -Dsonar.login=7c625c897fc064f6cde86feeebf16bd283e0426e
