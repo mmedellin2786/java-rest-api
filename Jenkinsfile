@@ -14,6 +14,7 @@ pipeline {
 					 echo "Iniciando build..."
 				         git init 
 					 pwd 
+					 rm -rf java-rest-api
 					 git clone https://github.com/mmedellin2786/java-rest-api.git			
 				'''
 			}
