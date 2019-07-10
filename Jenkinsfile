@@ -14,9 +14,14 @@ pipeline {
 					 echo "Iniciando build..."
 				         pwd
 					 whoami
+					 cd /home/
+					 pwd
+					 cd /home/ec2-user/
+					 pwd
+					 cd /home/ec2-user/java-rest-api/
+					 pwd
 					 cd /home/ec2-user/java-rest-api/java-rest-api
 				         pwd
-					 
 				'''
 			}
                         }
