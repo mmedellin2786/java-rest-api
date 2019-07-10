@@ -7,7 +7,7 @@ pipeline {
 				         whoami
 					 . ~/.profile
 					 pwd
-					 echo "Iniciando build..."
+					 echo "Building..."
 				         git init 
 					 pwd 
 					 rm -rf java-rest-api
@@ -21,7 +21,7 @@ pipeline {
                         steps { 
                                 sh '''   
 				         . ~/.profile
-					 echo "Iniciando Static test con sonarqube..."
+					 echo "Starting Static test con sonarqube..."
 					 pwd 
 					 cd java-rest-api
 					 pwd
@@ -31,6 +31,15 @@ pipeline {
 				'''
 			}
                         }
+		stage('UnitTest') {
+                        steps { 
+                                sh '''   
+					 . ~/.profile
+					 echo "Starting UnitTest" 
+					 pwd 
+				'''
+			}
+                        }
 		
                 }
-  }
+  
