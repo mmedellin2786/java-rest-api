@@ -15,7 +15,8 @@ pipeline {
 				         git init 
 					 pwd 
 					 rm -rf java-rest-api
-					 git clone https://github.com/mmedellin2786/java-rest-api.git	
+					 git clone https://github.com/mmedellin2786/java-rest-api.git
+					 cd java-rest-api
 					 mvn clean install -e
 				'''
 			}
