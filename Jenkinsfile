@@ -4,6 +4,9 @@ pipeline {
                 stage('Build') {
                         steps { 
                                 sh '''   
+				         whoami
+					 . ~/.profile
+					 pwd
 					 echo "Iniciando build..."
 				         git init 
 					 pwd 
