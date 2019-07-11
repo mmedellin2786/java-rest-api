@@ -40,8 +40,16 @@ pipeline {
 				'''
 			}
                         }
+		stage('Deploy') {
+                        steps { 
+                                sh '''   
+					 . ~/.profile
+					 echo "Starting Deployment" 
+					 pwd 
+				'''
+			}
+                        }
 		
                 }
-	
-	}
+  }
   
