@@ -36,7 +36,11 @@ pipeline {
                                 sh '''   
 					 . ~/.profile
 					 echo "Starting UnitTest" 
-					 pwd 
+					 pwd
+					 cd java-rest-api
+					 pwd
+					 mvn clean test
+					 
 				'''
 			}
                         }
