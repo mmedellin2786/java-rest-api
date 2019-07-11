@@ -44,7 +44,7 @@ pipeline {
                         steps { 
                                 sh '''   
 					 . ~/.profile
-					 echo "Starting Deploy" 
+					 echo "Starting Deployment" 
 					 pwd 
 				'''
 			}
