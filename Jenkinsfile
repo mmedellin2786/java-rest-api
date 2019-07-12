@@ -13,7 +13,7 @@ pipeline {
 					 rm -rf java-rest-api
 					 git clone https://github.com/mmedellin2786/java-rest-api.git
 					 cd java-rest-api
-					 mvn clean install -e
+					 mvn clean install -e -DskipTests
 				'''
 			}
                         }
