@@ -47,7 +47,7 @@ pipeline {
 		stage('Deploy') {
                         steps { 
                                 sh '''   
-					 ssh jenkins@13.58.49.12 'echo TEST'
+					 ssh jenkins@13.58.49.12 'ifconfig'
 					 echo "Starting Deployment" 
 					 pwd 
 				'''
