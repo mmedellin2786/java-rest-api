@@ -45,10 +45,9 @@ pipeline {
 			}
                         }
 		stage('Deploy') {
-			agent {label 'Slave'}
                         steps { 
                                 sh '''   
-					 . ~/.profile
+					 ssh jenkins@13.58.49.12
 					 echo "Starting Deployment" 
 					 pwd 
 				'''
