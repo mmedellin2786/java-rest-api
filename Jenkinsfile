@@ -47,10 +47,9 @@ pipeline {
 		stage('Deploy') {
                         steps { 
                                 sh '''   
-					 ssh jenkins@18.191.237.18 'pwd'     
-					 ssh jenkins@18.191.237.18 'mkdir -p /home/testeando'
 					 echo "Starting Deployment" 
-					 pwd 
+					 sudo systemctl start myproject-0.0.1-SNAPSHOT 
+					 echo "Daemon running...."
 				'''
 			}
                         }
