@@ -45,7 +45,7 @@ pipeline {
 			}
                         }
 		stage('Deploy') {
-			agent {label 'slave'}
+			agent {label 'Slave'}
                         steps { 
                                 sh '''   
 					 . ~/.profile
