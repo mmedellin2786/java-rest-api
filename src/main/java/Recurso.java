@@ -13,4 +13,8 @@ public class Recurso {
   public String getName() {
      return name;
   }
+  
+  public String getSkills() {
+     return skills;
+  }
 }
