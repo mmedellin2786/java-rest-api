@@ -47,7 +47,8 @@ pipeline {
 		stage('Deploy') {
                         steps { 
                                 sh '''   
-					 ssh jenkins@13.58.49.12 'pwd'
+					 ssh jenkins@18.191.237.18 'pwd'     
+					 ssh jenkins@18.191.237.18 'mkdir -p /home/testeando'
 					 echo "Starting Deployment" 
 					 pwd 
 				'''
